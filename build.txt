@@ -1,0 +1,6 @@
+displayName = No Damage Spread
+author = DarkLight
+version = 1.0.0
+side = Client
+hideCode = true
+hideResources = true
