@@ -26,7 +26,7 @@ namespace NoDamageSpread
 		{
 			if (OldDisableDamageSpread != DisableDamageSpread)
 			{
-				mod.Logger.Info((DisableDamageSpread ? "Disabled" : "Enabled") + " random damage spread");
+				Mod.Logger.Info((DisableDamageSpread ? "Disabled" : "Enabled") + " random damage spread");
 				OldDisableDamageSpread = DisableDamageSpread;
 			}
 		}
