@@ -8,6 +8,8 @@ namespace NoDamageSpread
 	{
 		public override ConfigScope Mode => ConfigScope.ClientSide;
 
+		public static Configuration Instance;
+
 		[Label("Disable Random Damage Spread")]
 		[Tooltip("Disables the randomness applied to damage dealt to players and enemies\nDefaults to true")]
 		[DefaultValue(true)]
@@ -16,7 +18,6 @@ namespace NoDamageSpread
 		public override void OnLoaded()
 		{
 			OldDisableDamageSpread = DisableDamageSpread;
-			NoDamageSpread.Config = this;
 		}
 
 		private bool OldDisableDamageSpread;
